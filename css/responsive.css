@@ -1,10 +1,74 @@
 @media screen and (min-width: 0px) and (max-width: 425px) {
+  /* header  */
+  .header-section h2 {
+    font-size: 30px;
+  }
+  .header-section h1 {
+    font-size: 50px;
+  }
+  .header-section h5 {
+    font-size: 22px;
+  }
+  .header-section ul li {
+    font-size: 14px;
+  }
+  .buy-btn {
+    padding: 8px 20px;
+    font-size: 17px;
+    margin-top: 30px;
+  }
+  /* new arrivales  */
+  .new-arrivales {
+    padding: 50px 0;
+  }
+  .new-arrivales h1 {
+    font-size: 35px;
+  }
+  /* mountain bike  */
+  .mountain-bikes h3 {
+    font-size: 20px;
+  }
+  .mountain-bikes h2 {
+    font-size: 30px;
+  }
+  .mountain-bikes p {
+    font-size: 15px;
+  }
+  .mountain-bikes ul li {
+    font-size: 14px;
+  }
+  /* choose nekro  */
+  .choose-nekro {
+    padding: 50px 0;
+  }
+  .choose-nekro h1 {
+    font-size: 35px;
+  }
+  /* all new  */
+  .all-new {
+    padding: 100px 0;
+  }
+  .all-new h2 {
+    font-size: 25px;
+  }
+  .all-new h1 {
+    font-size: 35px;
+  }
+  .all-new p {
+    font-size: 15px;
+  }
+  .shop2-btn {
+    padding: 8px 25px;
+    font-size: 17px;
+  }
+  /* all link  */
   .all-link h2 {
     font-size: 18px;
   }
   .all-link ul li a {
     font-size: 14px;
   }
+  /* footer  */
   footer p {
     font-size: 12px;
   }

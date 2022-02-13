@@ -361,7 +361,7 @@
               <h1>EXPLORE ACCESSORIES</h1>
             </div>
           </div>
-          <div class="row wow fadeInUp">
+          <div class="row gy-4 wow fadeInUp">
             <div class="col-md-3">
               <div class="accessories-golve">
                 <img class="img-fluid" src="images/golves-2.png" alt="">
@@ -408,6 +408,66 @@
               <h6>$30.00</h6>
             </div>
             <div class="col-md-3">
+              <div class="accessories-golve">
+                <img class="img-fluid" src="images/golves-1.png" alt="">
+              </div>
+              <p>Accessories</p>
+              <h5>Bicycle golves</h5>
+              <ul>
+                <li><i class="far fa-star" aria-hidden="true"></i></li>
+                <li><i class="far fa-star" aria-hidden="true"></i></li>
+                <li><i class="far fa-star" aria-hidden="true"></i></li>
+                <li><i class="far fa-star" aria-hidden="true"></i></li>
+                <li><i class="far fa-star" aria-hidden="true"></i></li>
+              </ul>
+              <h6>$40.00</h6>
+            </div>
+            <div class="col-md-3 view-accessories">
+              <div class="accessories-golve">
+                <img class="img-fluid" src="images/golves-2.png" alt="">
+              </div>
+              <p>Accessories</p>
+              <h5>Bicycle golves</h5>
+              <ul>
+                <li><i class="far fa-star" aria-hidden="true"></i></li>
+                <li><i class="far fa-star" aria-hidden="true"></i></li>
+                <li><i class="far fa-star" aria-hidden="true"></i></li>
+                <li><i class="far fa-star" aria-hidden="true"></i></li>
+                <li><i class="far fa-star" aria-hidden="true"></i></li>
+              </ul>
+              <h6>$30.00</h6>
+            </div>
+            <div class="col-md-3 view-accessories">
+              <div class="accessories-golve">
+                <img class="img-fluid" src="images/golves-1.png" alt="">
+              </div>
+              <p>Accessories</p>
+              <h5>Bicycle golves</h5>
+              <ul>
+                <li><i class="far fa-star" aria-hidden="true"></i></li>
+                <li><i class="far fa-star" aria-hidden="true"></i></li>
+                <li><i class="far fa-star" aria-hidden="true"></i></li>
+                <li><i class="far fa-star" aria-hidden="true"></i></li>
+                <li><i class="far fa-star" aria-hidden="true"></i></li>
+              </ul>
+              <h6>$40.00</h6>
+            </div>
+            <div class="col-md-3 view-accessories">
+              <div class="accessories-golve">
+                <img class="img-fluid" src="images/golves-2.png" alt="">
+              </div>
+              <p>Accessories</p>
+              <h5>Bicycle golves</h5>
+              <ul>
+                <li><i class="far fa-star" aria-hidden="true"></i></li>
+                <li><i class="far fa-star" aria-hidden="true"></i></li>
+                <li><i class="far fa-star" aria-hidden="true"></i></li>
+                <li><i class="far fa-star" aria-hidden="true"></i></li>
+                <li><i class="far fa-star" aria-hidden="true"></i></li>
+              </ul>
+              <h6>$30.00</h6>
+            </div>
+            <div class="col-md-3 view-accessories">
               <div class="accessories-golve">
                 <img class="img-fluid" src="images/golves-1.png" alt="">
               </div>
@@ -441,8 +501,16 @@
           </div>
           <div class="row wow fadeInUp">
             <div class="col-md-10 m-auto">
-              <div class="">
-                <video class="w-100" src="video/thank_you.mp4" controls></video>
+              <div class="thank-video">
+                <video class="video" src="video/thank_you.mp4"></video>
+                <div class="video-controls">
+                  <div class="orange-bar">
+                    <div class="orange-juice"></div>
+                  </div>
+                  <div class="buttons">
+                    <button id="play-pause"></button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -453,7 +521,7 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
             </div>
             <div class="col-lg-5 text-lg-end me-auto">
-              <button class="buy-btn btn view-all">Join the programme</button>
+              <button class="buy-btn btn join-btn">Join the programme</button>
             </div>
           </div>
         </div>
@@ -563,6 +631,9 @@
       </div>
     </footer>
     <!-- footer end  -->
+    <a href="" class="scrollup">
+      <i class="fa-solid fa-circle-chevron-up"></i>
+    </a>
     <!-------------- Counter ------------->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- fontawesome link  -->
@@ -578,9 +649,27 @@
     <!-- counter js  -->
     <script src="js/jquery.counterup.min.js"></script>
     <script src="js/script.js"></script>
-
+    <!-- video  -->
+    <script src="js/video.js"></script>
     <!-- owl carousel  -->
     <script src="js/owl.carousel.min.js"></script>
+    <!-- go top  -->
+    <script>
+      $(window).scroll(function() {
+      if ($(this).scrollTop() > 600) {
+        $(".scrollup").show();
+      } else {
+        $(".scrollup").hide();
+      }
+    });
+    $(".scrollup").click(function() {
+      $("html, body").animate({
+        scrollTop: 0
+      }, 600);
+      return false;
+    });
+    </script>
+
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>

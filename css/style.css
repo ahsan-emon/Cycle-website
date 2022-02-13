@@ -6,6 +6,21 @@
   padding: 0;
   font-family: "Racing Sans One", cursive;
 }
+.scrollup {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  padding: 10px;
+  z-index: 100;
+  font-size: 45px;
+  color: #cc3b33;
+  display: none;
+  transition: 0.3s all ease-in-out;
+}
+.scrollup:hover {
+  color: #cc3b33;
+  text-shadow: 0px 1px 3px #c3cbcb;
+}
 /* header start  */
 header {
   background-image: url("../images/cycle1.jpg");
@@ -63,8 +78,8 @@ header .navbar-light .navbar-nav .nav-link {
   -ms-transition: 0.5s linear;
   -o-transition: 0.5s linear;
   transition: 0.5s linear;
-  border-top-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 header .navbar-light .navbar-nav .nav-link:hover {
@@ -109,10 +124,7 @@ header .navbar-light .navbar-nav .nav-link:hover::before {
   z-index: -1;
 }
 header .navbar-light .navbar-nav .nav-link:focus {
-  background-color: #cc3b33;
   color: #fff;
-  border-top-left-radius: 20px;
-  border-bottom-right-radius: 20px;
 }
 .shop-btn {
   background-color: #fff;
@@ -131,7 +143,7 @@ header .navbar-light .navbar-nav .nav-link:focus {
   box-shadow: none;
 }
 .header-section {
-  height: 90vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
 }
@@ -184,9 +196,19 @@ header .navbar-light .navbar-nav .nav-link:focus {
   color: #000;
   background-color: #fff;
 }
+.buy-btn:focus {
+  box-shadow: none;
+}
 /* new arrivales section  */
 .new-arrivales {
   padding: 100px 0;
+}
+.new-arrivales img {
+  transition: 0.4s all ease-in-out;
+}
+.new-arrivales img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 .new-arrivales h1 {
   color: #161616;
@@ -420,6 +442,61 @@ header .navbar-light .navbar-nav .nav-link:focus {
   color: #fff;
 }
 /* join programme start */
+.video {
+  width: 100%;
+}
+.thank-video {
+  position: relative;
+  overflow: hidden;
+}
+.thank-video:hover .video-controls {
+  transform: translateY(0%);
+}
+.video-controls {
+  display: flex;
+  position: absolute;
+  bottom: 7px;
+  width: 100%;
+  flex-wrap: wrap;
+  background-color: rgba(36, 34, 34, 0.5);
+  transform: translateY(100%) translateY(0px);
+  transition: 0.2s all ease-in-out;
+}
+.orange-bar {
+  height: 8px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.514);
+}
+.orange-juice {
+  height: 100%;
+  background-color: #cc3b33;
+}
+.buttons {
+  padding-left: 6px;
+}
+.buttons button {
+  background: none;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+.buttons button::before {
+  content: "\f144";
+  font-family: "font awesome 5 free";
+  width: 30px;
+  height: 30px;
+  font-size: 28px;
+  color: #fff;
+  /* -webkit-font-smoothing: antialiased; */
+}
+.buttons button.play::before {
+  content: "\f144";
+}
+.buttons button.pause::before {
+  content: "\f28b";
+}
 .join-programme p {
   margin: 0;
   color: #4b4f67;
@@ -428,6 +505,10 @@ header .navbar-light .navbar-nav .nav-link:focus {
 .join-programme {
   justify-content: space-between;
   align-items: center;
+}
+.join-btn:hover {
+  background-color: #000;
+  color: #fff;
 }
 /* all new section  */
 .all-new {
@@ -504,6 +585,9 @@ header .navbar-light .navbar-nav .nav-link:focus {
   background-color: #fff;
   color: #000;
 }
+.shop2-btn:focus {
+  box-shadow: none;
+}
 /* count section start  */
 .counting {
   padding: 100px 0;
@@ -553,7 +637,7 @@ header .navbar-light .navbar-nav .nav-link:focus {
 .all-link h2 {
   color: #fff;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 26px;
 }
 .all-link ul {
   list-style: none;
@@ -569,7 +653,7 @@ header .navbar-light .navbar-nav .nav-link:focus {
   color: #fff;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: 18px;
+  font-size: 17px;
   transition: 0.4s all ease-in-out;
 }
 .all-link ul li a:hover {
